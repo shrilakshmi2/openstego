@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="encode">
+            <h3>Encode the image</h3>
+            <p class="input_encode">Choose File</p>
+            <p class="filename_encode"></p>
+            <input type="text" class="key_enter_encode" placeholder="Enter the key"><br> 
+            <input type="text" class="text_to_encode" placeholder="enter the text to be encoded">
+            <p class="encode_send">Encode</p>
+            <p class="msg"></p>
+            <div class="response">
+                <p class="download">Download</p>
+                <p class="warning_msg">*please make sure that you remember the key</p>
+            </div>
+        </div>
+        <div class="decode">
+            <h3>Decode the image</h3>
+            <p class="input">Choose File</p>
+            <p class="filename_decode"></p>
+            <input type="text" placeholder="Enter the key" class="keyinput_upload" >
+            <p class="decode_send">Decode</p>
+            <p class="decodeted_text"></p>
+        </div>
+    </div>
+    <input type="file" class="input_file_decode" accept="image/*" style="position:absolute;top:-100em">
+    <input type="file" class="input_file_encode" accept="image/*" style="position:absolute;top:-100em">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="{% static 'home.js' %}"></script>
+</body>
+</html>

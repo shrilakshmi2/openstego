@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.886);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 60vh 1fr;
+    grid-template-columns: 1fr 40vw 60px 40vw 1fr;
+}
+.decode{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.466);
+    height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+}
+.decode h3,.encode h3{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-items: center;
+}
+.decode .input,.input_encode{
+    height: 40px;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0.579);
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin-left: 30px;
+}
+.decode input,.encode input{
+    background-color: black;
+    border: none;
+    height: 40px;
+    color: white;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.decode .filename_decode,.encode .filename_encode{
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 50px;
+    font-size: small;
+}
+.decode .decode_send{
+    background-color: chartreuse;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 40%;;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.decode .decodeted_text{
+    color: rgb(255, 0, 47);
+    font-size: medium;
+}
+.error_popup{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: rgba(245, 222, 179, 0.247);
+    display: grid;
+    place-items: center;
+}
+.error_popup img{
+    height: 30px;
+    width: 30px;
+}
+.error_popup .inner_div{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    min-width: 40vw;
+}
+.error_popup .inner_div img{
+    margin-left: 94%;
+    margin-top: 5px;
+
+}
+.inner_div .error{
+    color: rgb(255, 0, 89);
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.inner_div .error_msg{
+    font-size: medium;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.inner_div pre{
+    font-size: medium;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.inner_div .success{
+    color: green;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.inner_div .the_msg_is{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+.inner_div .The_msg{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    height: 40px;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgba(128, 255, 0, 0.579);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+/* enoding */
+.encode{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: rgba(255, 255, 255, 0.466);
+    height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+}
+.encode .encode_send{
+    background-color: chartreuse;
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.encode .msg{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 40px;
+}
+.download{
+    background-color: rgb(191, 0, 255);
+    color: black;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 40%;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.response .warning_msg{
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: brown;
+}
+#load{
+    top: 0px;
+    left: 0px;
+    background-color: rgba(240, 248, 255, 0.711);
+    display: grid;
+    place-items: center;
+}
+#load img{
+    height: 70px;
+}
